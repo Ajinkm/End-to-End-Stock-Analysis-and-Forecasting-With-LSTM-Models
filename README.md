@@ -1,6 +1,6 @@
 # End-to-End-Stock-Analysis-and-Forecasting-With-LSTM-Models
 
-Selamat datang di Lekreys, sebuah aplikasi analisis dan peramalan saham end-to-end. Proyek ini dirancang untuk memberikan wawasan komprehensif mengenai performa pasar saham di indonesia melalui analisis satu atau beberapa saham, serta peramalan saham menggunakan model LSTM (Long Short-Term Memory).
+Selamat datang di sebuah aplikasi analisis dan peramalan saham end-to-end. Proyek ini dirancang untuk memberikan wawasan komprehensif mengenai performa pasar saham di indonesia melalui analisis satu atau beberapa saham, serta peramalan saham menggunakan model LSTM (Long Short-Term Memory).
 
 # Fitur
 - Analisis Saham:
