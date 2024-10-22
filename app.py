@@ -8,10 +8,10 @@ import guide
 
 st.set_page_config(layout="wide")
 
-ticker_list = pd.read_csv(r"scrapping_ticker\Ticker_list.csv")
+ticker_list = pd.read_csv("scrapping_ticker/Ticker_list.csv")
 
 
-st.sidebar.image(r"assets_\logo.png", caption="Don't Expect Profits Here.",use_column_width=True)
+st.sidebar.image("assets_/logo.png", caption="Don't Expect Profits Here.",use_column_width=True)
 section = st.sidebar.radio(
     "**Select Section:**", 
     options=["📊 In-Depth Analysis","🔮 Future Trends Forecast", "⚙️ Customize LSTM Parameters","📈 Stock Symbols"])
