@@ -44,7 +44,7 @@ def Analysis_stock_data(stock_symbol):
         with st.expander("Display Stock Data"):
 
             with st.container(height=400):
-                st.table(data)
+                st.dataframe(data)
             col1, col2 = st.columns([2, 1])
             with col1:
                 st.subheader(f"Total Rows : {data.shape[0]}")
