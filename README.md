@@ -16,7 +16,7 @@ Peramalan Saham dengan LSTM:
 
 
 # Demo
-![Screenshot (716)](https://github.com/user-attachments/assets/6bda6c6f-746e-4be3-bc83-5af9aadb78fb)
+<img width="949" alt="Screenshot 2024-10-22 225444" src="https://github.com/user-attachments/assets/296d46bf-dff1-49f6-8b84-12ecd17412a3">
 
 
 
