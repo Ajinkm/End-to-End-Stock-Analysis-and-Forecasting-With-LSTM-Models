@@ -18,7 +18,7 @@ def Overview_all(data , title , drop=False) :
     fig = go.Figure()
 
     for column in data.columns:
-        fig.add_trace(go.Scatter(x=data.index, y=data[column], mode='lines'))
+        fig.add_trace(go.Scatter(x=data.index, y=data[column], mode='lines') , name=column)
 
     fig.update_layout(
         title=title,
