@@ -21,7 +21,7 @@ Selamat datang di Lekreys, sebuah aplikasi analisis dan peramalan saham end-to-e
 
 
 
-## Link : [ https://bca-tiktok-sentiment-analysis.streamlit.app/](https://profitfinder.streamlit.app/)
+## Link : https://profitfinder.streamlit.app/
 
 
 ## Technologies Used
