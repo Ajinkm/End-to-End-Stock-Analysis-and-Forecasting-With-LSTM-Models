@@ -10,7 +10,6 @@ def Get_Analysis_Data(start , end , ticker ) :
     data = yf.download(ticker , start=start , end=end)
     data.columns =["Open","High","Low","Close","Adj Close","Volume"]
     data.reset_index(drop=True , inplace=True) 
-    data.set_index("Date" , inplace=True)
 
 
     return data
