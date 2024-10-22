@@ -8,7 +8,7 @@ import pandas as pd
 
 def Get_Analysis_Data(start , end , ticker ) : 
     data = yf.download(ticker , start=start , end=end)
-    data.columns =['Date',"Open","High","Low","Close","Adj Close","Volume"]
+    data.columns =["Open","High","Low","Close","Adj Close","Volume"]
 
 
     return data
