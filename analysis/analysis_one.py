@@ -69,15 +69,15 @@ def Analysis_stock_data(stock_symbol):
                 # st.subheader(f":green[{np.round(data.Close.iloc[-1)}]")
 
             with col2:
-                st.subheader("Lowest Price : ")
-                st.subheader(f":red[{data.Low.min():.2f}]")
-                st.subheader("Most Recent Opening Price")
-                st.subheader(f":red[{data.Open.iloc[-1]:.2f}]")
-            with col3:
-                st.subheader("Average Price : ")
-                st.subheader(f":blue[{data.Close.mean():.2f}]")
-                st.subheader("Average Daily Volume")
-                st.subheader(f":blue[{(data.Volume.sum()/30):.2f}]")
+            #     st.subheader("Lowest Price : ")
+            #     st.subheader(f":red[{data.Low.min():.2f}]")
+            #     st.subheader("Most Recent Opening Price")
+            #     st.subheader(f":red[{data.Open.iloc[-1]:.2f}]")
+            # with col3:
+            #     st.subheader("Average Price : ")
+            #     st.subheader(f":blue[{data.Close.mean():.2f}]")
+            #     st.subheader("Average Daily Volume")
+            #     st.subheader(f":blue[{(data.Volume.sum()/30):.2f}]")
 
             st.divider()
 
