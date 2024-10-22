@@ -8,7 +8,12 @@ import pandas as pd
 
 def Get_Analysis_Data(start , end , ticker ) : 
     data = yf.download(ticker , start=start , end=end)
+
+    if ticker in data.columns:
+        data = data.loc[:, ~data.columns.str.contains(ticker)]  
+    
     return data
+
 
 def Get_compare_data(start , end, ticker = '^GSPC'):
     data = yf.download(ticker , start=start , end=end)
