@@ -16,6 +16,8 @@ def Get_Analysis_Data(start , end , ticker ) :
 
 def Get_compare_data(start , end, ticker = '^GSPC'):
     data = yf.download(ticker , start=start , end=end)
+    data.columns =["Open","High","Low","Close","Adj Close","Volume"]
+
     return data
 
 def Get_Return(data , num=100) : 
