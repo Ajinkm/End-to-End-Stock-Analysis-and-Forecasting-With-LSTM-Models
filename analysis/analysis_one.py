@@ -66,7 +66,7 @@ def Analysis_stock_data(stock_symbol):
                 st.subheader("Highest Price : ")
                 st.subheader(f":green[{data.High.max():.2f}]")
                 st.subheader("Most Recent Closing Price")
-                st.subheader(f":green[{data.Close.iloc[-1]:.2f}]")
+                st.subheader(f":green[{np.round(data.Close.iloc[-1)}]")
 
             with col2:
                 st.subheader("Lowest Price : ")
