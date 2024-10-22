@@ -8,10 +8,9 @@ import pandas as pd
 
 def Get_Analysis_Data(start , end , ticker ) : 
     data = yf.download(ticker , start=start , end=end)
+    data.columns =['Date',"Open","High","Low","Close","Adj Close","Volume"]
 
-    if ticker in data.columns:
-        data = data.loc[:, ~data.columns.str.contains(ticker)]  
-    
+
     return data
 
 
