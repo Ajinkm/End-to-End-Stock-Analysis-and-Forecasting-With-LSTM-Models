@@ -39,7 +39,7 @@ def Forecasting(stock_symbol):
 
         datasets = preprocessing_model.make_datasets(data=data)
 
-        scaled_data = preprocessing_model.scale_data(datasets=datasets)
+        scaled_data = preprocessing_model.scale_data(datasets=datasets.Close)
 
         train_len =  preprocessing_model.split_num(datasets=datasets) 
 
