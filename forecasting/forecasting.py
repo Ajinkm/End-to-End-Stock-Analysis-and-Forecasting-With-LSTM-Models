@@ -28,7 +28,7 @@ def Forecasting(stock_symbol):
     with col1 : 
         start = st.date_input("Start-Date : " , value=pd.to_datetime('2023-01-01'))
     with col2 : 
-        end = st.date_input("Start-Date : " , value=pd.to_datetime(datetime.date.today()))
+        end = st.date_input("End-Date : " , value=pd.to_datetime(datetime.date.today()))
     
     forecast = st.slider(label="How many days would you like to forecast ? ", min_value=1 , max_value=30, step=1)
 
