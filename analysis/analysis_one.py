@@ -26,7 +26,7 @@ def Analysis_stock_data(stock_symbol):
         start = st.date_input("Start-Date : ", value=pd.to_datetime("2023-01-01"))
     with col2:
         end = st.date_input(
-            "Start-Date : ", value=pd.to_datetime(datetime.date.today())
+            "End-Date : ", value=pd.to_datetime(datetime.date.today())
         )
 
     if st.button("Retrieve Data and Perform Analysis"):
