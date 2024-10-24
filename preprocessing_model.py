@@ -17,10 +17,8 @@ def scale_data(datasets , scale = 'MinMaxScaler'):
         scaler = StandardScaler()
     elif scale == "RobustScaler" : 
         scaler = RobustScaler()
-    elif scale == "Normalizer" : 
-        scaler = Normalizer()
                   
-    scaled_data = scaler.fit_transform([datasets])
+    scaled_data = scaler.fit_transform(datasets)
 
     return {"scaled_data" : scaled_data , "scaler": scaler}
 
