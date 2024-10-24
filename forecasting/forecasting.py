@@ -33,7 +33,7 @@ def Forecasting(stock_symbol):
     
     forecast = st.slider(label="How many days would you like to forecast ? ", min_value=1 , max_value=30, step=1)
 
-     data = preprocessing.Get_Analysis_Data(start=start, end=end, ticker=stock_symbol)
+    data = preprocessing.Get_Analysis_Data(start=start, end=end, ticker=stock_symbol)
 
 
     if st.button('Fit Model and Forecast') :
