@@ -32,7 +32,7 @@ def Forecasting(stock):
     
     forecast = st.slider(label="How many days would you like to forecast ? ", min_value=1 , max_value=30, step=1)
 
-    data = yf.download(stock , start=start , end=end)
+    data = preprocessing_model.Get_Analysis_Data(ticker=stock , start=start , end=end)
 
     st.dataframe(data)
 
