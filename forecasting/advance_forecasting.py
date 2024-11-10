@@ -34,6 +34,8 @@ def Forecasting(stock):
 
     data = yf.download(stock , start=start , end=end)
 
+    st.dataframe(data)
+
     with st.container(border=True):
         st.title("Customize Your LSTM Model : ")
 
