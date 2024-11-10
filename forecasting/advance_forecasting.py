@@ -35,8 +35,6 @@ def Forecasting(stock):
 
     data = preprocessing.Get_Analysis_Data(ticker=stock , start=start , end=end)
 
-    st.dataframe(data)
-
     with st.container(border=True):
         st.title("Customize Your LSTM Model : ")
 
