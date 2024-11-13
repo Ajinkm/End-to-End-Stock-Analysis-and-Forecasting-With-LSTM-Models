@@ -21,7 +21,6 @@ def Analysis_stock_data(stock_symbol):
     )
     st.divider()
 
-    st.header(stock_symbol)
 
     col1, col2 = st.columns(2)
     with col1:
@@ -41,7 +40,10 @@ def Analysis_stock_data(stock_symbol):
         data = preprocessing.Get_Analysis_Data(
             start=start, end=end, ticker=stock_symbol
         )
+
+        time.sleep(2)
         data_compare = preprocessing.Get_compare_data(start=start, end=end)
+        time.sleep(2)
 
         with st.expander("Display Stock Data"):
 
