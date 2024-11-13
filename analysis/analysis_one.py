@@ -21,6 +21,8 @@ def Analysis_stock_data(stock_symbol):
     )
     st.divider()
 
+    st.header(stock_symbol)
+
     col1, col2 = st.columns(2)
     with col1:
         start = st.date_input("Start-Date : ", value=pd.to_datetime("2023-01-01"))
